@@ -2,6 +2,7 @@ package org.example.mvc.repository;
 
 import org.example.mvc.model.User;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,5 +12,9 @@ public class UserRepository {
 
     public static void save(User user) {
         users.put(user.getUserId(), user);      // userId 를 key 로 해서 저장
+    }
+
+    public static Collection<User> findAll() {
+        return users.values();
     }
 }
