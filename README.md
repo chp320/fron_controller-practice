@@ -30,3 +30,23 @@ dispatcher.forward(request, response);
 
 ## 실습 목표
 - 모든 요청을 DispatcherServlet 이 받아서 적절한 컨트롤러에 작업을 위임한다.
+
+<hr>
+
+## 스프링 웹 MVC 프레임워크
+![img_2.png](img_2.png)
+  - 출처) https://terasolunaorg.github.io/guideline/1.0.1.RELEASE/en/Overview/SpringMVCOverview.html
+  - reference) https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html
+1) 최초 요청 url 을 dispatcherServlet 이 캐치!
+2) url 에 맵핑되는 컨트롤러 정보 리턴!
+3) Handler Adapter 가 컨트롤러를 실행!
+4) 컨트롤러는 리턴 값으로 view-name 을 반환!
+5) dispatcherServlet 은 view-name 을 가지고 View Resolver 를 통해서 view 객체를 리턴 받음!
+6) View render 를 통해서 응답!
+
+## 실습 목표!
+- 애너테이션 기반 MVC 프레임워크를 만든다!
+  - DispatcherServlet
+  - AnnotationHandlerMapping (= HandlerMapping)
+  - HandlerAdapter
+  - ViewResolver
