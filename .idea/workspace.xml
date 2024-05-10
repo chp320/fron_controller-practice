@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fbe8a27-a4c5-4648-9967-9f50a75f5ffb" name="Changes" comment="[Web MVC] RequestMappingHandlerMapping 에서 URI 에 따른 컨트롤러 맵핑 기능 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/HandlerKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/RequestMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/UserCreateController.java" afterDir="false" />
+    <list default="true" id="6fbe8a27-a4c5-4648-9967-9f50a75f5ffb" name="Changes" comment="[Web MVC] &lt;method, uri&gt; 를 파라미터로 받는 HandlerKey 객체 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/ForwardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapps/user/form.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/UserCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/UserCreateController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715275157158</updated>
-      <workItem from="1715275158790" duration="5681000" />
+      <workItem from="1715275158790" duration="6870000" />
     </task>
     <task id="LOCAL-00001" summary="dispatcherServlet 기능 구현">
       <created>1715276026754</created>
@@ -110,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715335810997</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[Web MVC] &lt;method, uri&gt; 를 파라미터로 받는 HandlerKey 객체 추가">
+      <created>1715337005492</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715337005492</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +139,7 @@
     <MESSAGE value="dispatcherServlet 기능 구현" />
     <MESSAGE value="[front controller] 요청된 uri 에 대해 맵핑되는 컨트롤러로 위임하는 기능 구현" />
     <MESSAGE value="[Web MVC] RequestMappingHandlerMapping 에서 URI 에 따른 컨트롤러 맵핑 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Web MVC] RequestMappingHandlerMapping 에서 URI 에 따른 컨트롤러 맵핑 기능 구현" />
+    <MESSAGE value="[Web MVC] &lt;method, uri&gt; 를 파라미터로 받는 HandlerKey 객체 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Web MVC] &lt;method, uri&gt; 를 파라미터로 받는 HandlerKey 객체 추가" />
   </component>
 </project>

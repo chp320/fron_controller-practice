@@ -25,13 +25,15 @@ public class RequestMappingHandlerMapping {
 
         mappings.put(new HandlerKey(RequestMethod.GET, "/"), new HomeController());
         mappings.put(new HandlerKey(RequestMethod.GET, "/users"), new UserListController());
-//        mappings.put(new HandlerKey(RequestMethod.POST, "/users"), new UserCreateController());
+        mappings.put(new HandlerKey(RequestMethod.POST, "/users"), new UserCreateController());
+        mappings.put(new HandlerKey(RequestMethod.GET, "/user/form"), new ForwardController("/user/form.jsp"));     // 요청한 uri 로 이동 시킴 (다른 항목은 처리를 하고 리턴을 주는 구조)
+
 
     }
 
     /**
      * urlPath 와 일치하는 Controller 를 리턴하는 메서드
-     * @param uriPath
+     * @param handlerKey
      * @return
      */
     public Controller findHandler(HandlerKey handlerKey) {
