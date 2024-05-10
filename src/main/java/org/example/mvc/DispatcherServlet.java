@@ -1,6 +1,8 @@
 package org.example.mvc;
 
 import org.example.mvc.controller.Controller;
+import org.example.mvc.controller.HandlerKey;
+import org.example.mvc.controller.RequestMethod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,7 +33,7 @@ public class DispatcherServlet extends HttpServlet {
         // 맵핑된 컨트롤러에 작업을 위임
         try {
             // 요청받은 url 에 맵핑된 컨트롤러를 반환
-            Controller handler = rmhm.findHandler(request.getRequestURI());
+            Controller handler = rmhm.findHandler(new HandlerKey(RequestMethod.valueOf(request.getMethod()), request.getRequestURI()));
             String viewName = handler.handleRequest(request, response);
 
             // getRequestDispatcher() 는 파라미터로 전달된 리소스에 대해 forward 하는 역할
