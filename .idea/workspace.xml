@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fbe8a27-a4c5-4648-9967-9f50a75f5ffb" name="Changes" comment="[Web MVC] &lt;method, uri&gt; 를 파라미터로 받는 HandlerKey 객체 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/ForwardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapps/user/form.jsp" afterDir="false" />
+    <list default="true" id="6fbe8a27-a4c5-4648-9967-9f50a75f5ffb" name="Changes" comment="[Web MVC] form.jsp 에서 입력한 값을 저장 및 출력하기 위한 기능 구현 - redirect vs forward 처리를 위한 로직 미구현으로 수행 시 null pointer exception 발생">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/view/JspView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/view/JspViewResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/view/RedirectView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/view/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/view/ViewResolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/UserCreateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/UserCreateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/UserListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/UserListController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,6 +62,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.mvc.controller" />
     </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="org.example.mvc.view.RedirectView" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="WebApplicationServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -88,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715275157158</updated>
-      <workItem from="1715275158790" duration="6870000" />
+      <workItem from="1715275158790" duration="9528000" />
     </task>
     <task id="LOCAL-00001" summary="dispatcherServlet 기능 구현">
       <created>1715276026754</created>
@@ -118,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715337005492</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[Web MVC] form.jsp 에서 입력한 값을 저장 및 출력하기 위한 기능 구현 - redirect vs forward 처리를 위한 로직 미구현으로 수행 시 null pointer exception 발생">
+      <created>1715338372582</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715338372582</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +153,7 @@
     <MESSAGE value="[front controller] 요청된 uri 에 대해 맵핑되는 컨트롤러로 위임하는 기능 구현" />
     <MESSAGE value="[Web MVC] RequestMappingHandlerMapping 에서 URI 에 따른 컨트롤러 맵핑 기능 구현" />
     <MESSAGE value="[Web MVC] &lt;method, uri&gt; 를 파라미터로 받는 HandlerKey 객체 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Web MVC] &lt;method, uri&gt; 를 파라미터로 받는 HandlerKey 객체 추가" />
+    <MESSAGE value="[Web MVC] form.jsp 에서 입력한 값을 저장 및 출력하기 위한 기능 구현 - redirect vs forward 처리를 위한 로직 미구현으로 수행 시 null pointer exception 발생" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Web MVC] form.jsp 에서 입력한 값을 저장 및 출력하기 위한 기능 구현 - redirect vs forward 처리를 위한 로직 미구현으로 수행 시 null pointer exception 발생" />
   </component>
 </project>

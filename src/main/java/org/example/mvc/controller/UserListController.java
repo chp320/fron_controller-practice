@@ -12,6 +12,6 @@ public class UserListController implements Controller {
         request.setAttribute("users", List.of());
 
         // user 목록 리턴
-        return "/user/list.jsp";
+        return "/user/list";
     }
 }
