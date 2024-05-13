@@ -20,6 +20,9 @@ dependencies {
     // jsp 화면 생성 위한 jstl 의존성 추가
     implementation 'javax.servlet:jstl:1.2'
 
+    // Reflection 의존성 추가
+    implementation 'org.reflections:reflections:0.9.12'
+
     // 로그와 관련된 의존성 추가
     implementation 'ch.qos.logback:logback-classic:1.2.3'
 
