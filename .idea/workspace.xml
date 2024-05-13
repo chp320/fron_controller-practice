@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fbe8a27-a4c5-4648-9967-9f50a75f5ffb" name="Changes" comment="[Web MVC] viewResolver 기능 구현 - 한글 깨짐 현상 처리를 위해서 servlet 의 필터 기능 적용">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/HandlerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/SimpleControllerHandlerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/view/ModelAndView.java" afterDir="false" />
+    <list default="true" id="6fbe8a27-a4c5-4648-9967-9f50a75f5ffb" name="Changes" comment="[Web MVC] 기본적인 MVC 프레임워크 구현">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/Handlermapping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -91,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715275157158</updated>
-      <workItem from="1715275158790" duration="12957000" />
+      <workItem from="1715275158790" duration="14557000" />
     </task>
     <task id="LOCAL-00001" summary="dispatcherServlet 기능 구현">
       <created>1715276026754</created>
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715341921612</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[Web MVC] 기본적인 MVC 프레임워크 구현">
+      <created>1715351326773</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715351326773</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +181,7 @@
     <MESSAGE value="[Web MVC] viewResolver 기능 구현 - 다양한 형태의 view(jsp, 리다이렉트 등)가 발생 가능하므로 인터페이스 생성 뒤 유형에 맞는 viewResolver 호출 가능하도록 기능 구현" />
     <MESSAGE value="[Web MVC] viewResolver 기능 구현 - jsp 화면에서 'users' key 로 노출할 값들을 맵핑" />
     <MESSAGE value="[Web MVC] viewResolver 기능 구현 - 한글 깨짐 현상 처리를 위해서 servlet 의 필터 기능 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Web MVC] viewResolver 기능 구현 - 한글 깨짐 현상 처리를 위해서 servlet 의 필터 기능 적용" />
+    <MESSAGE value="[Web MVC] 기본적인 MVC 프레임워크 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Web MVC] 기본적인 MVC 프레임워크 구현" />
   </component>
 </project>

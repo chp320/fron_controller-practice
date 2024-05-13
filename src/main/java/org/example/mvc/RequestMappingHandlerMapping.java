@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 역할
  */
-public class RequestMappingHandlerMapping {
+public class RequestMappingHandlerMapping implements Handlermapping {
     // key는 url path, value는 컨트롤러명 .. -> 즉, 요청된 url path에 따라 위임할 컨트롤러를 정의하는 역할
     // ex) [key] /users [value] UserController --> /users 로 요청이 오면 UserController 로 전달한다.
     private Map<HandlerKey, Controller> mappings = new HashMap<>();

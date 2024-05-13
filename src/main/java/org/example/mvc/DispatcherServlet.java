@@ -25,7 +25,7 @@ import java.util.List;
 public class DispatcherServlet extends HttpServlet {
     private static final Logger log = LoggerFactory.getLogger(DispatcherServlet.class);
 
-    private RequestMappingHandlerMapping rmhm;
+    private Handlermapping hm;
 
     private List<HandlerAdapter> handlerAdapters;
 
@@ -33,8 +33,10 @@ public class DispatcherServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        rmhm = new RequestMappingHandlerMapping();
+        RequestMappingHandlerMapping rmhm = new RequestMappingHandlerMapping();
         rmhm.init();
+
+        hm = rmhm;
 
         handlerAdapters = List.of(new SimpleControllerHandlerAdapter());
 
@@ -49,7 +51,7 @@ public class DispatcherServlet extends HttpServlet {
         // 맵핑된 컨트롤러에 작업을 위임
         try {
             // 요청받은 url 에 맵핑된 컨트롤러를 반환
-            Controller handler = rmhm.findHandler(new HandlerKey(RequestMethod.valueOf(request.getMethod()), request.getRequestURI()));
+            Object handler = hm.findHandler(new HandlerKey(RequestMethod.valueOf(request.getMethod()), request.getRequestURI()));
 
             HandlerAdapter handlerAdapter = handlerAdapters.stream()
                     .filter(ha -> ha.supports(handler))     // adapter 가 지원하는 handler인지 여부 판단
